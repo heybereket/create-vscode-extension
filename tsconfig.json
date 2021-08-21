@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2020"],
+    "outDir": "lib",
+    "sourceMap": true,
+    "target": "es6",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noEmitOnError": false,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "strict": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "preserveSymlinks": true,
+    "typeRoots": ["./node_modules/@types"],
+    "downlevelIteration": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "rootDir": "src"
+  },
+  "include": ["src/**/*.ts"],
+}
