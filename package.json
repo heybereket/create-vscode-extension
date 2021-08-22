@@ -1,6 +1,6 @@
 {
   "name": "create-vscode-extension",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "repository": "git@github.com:heybereket/create-vscode-extension.git",
   "author": "Bereket Semagn <semagnbereket@gmail.com>",
   "license": "MIT",
