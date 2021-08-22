@@ -1,10 +1,15 @@
 {
   "name": "create-vscode-extension",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repository": "git@github.com:heybereket/create-vscode-extension.git",
   "author": "Bereket Semagn <semagnbereket@gmail.com>",
   "license": "MIT",
-  "bin": "./dist/cli.js",
+  "bin": {
+    "create-vscode-extension": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "clean": "rimraf ./dist",
@@ -22,5 +27,8 @@
     "ts-node-dev": "^1.1.8",
     "tslib": "^2.3.1",
     "typescript": "^4.3.5"
+  },
+  "engines": {
+    "node": ">=12.0.0"
   }
 }
