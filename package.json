@@ -1,19 +1,18 @@
 {
   "name": "create-vscode-extension",
-  "version": "0.1.1",
-  "repository": "git@github.com:heybereket/create-vscode-extension.git",
+  "description": "⚡ Create Visual Studio Code extensions in one command",
+  "version": "0.1.3",
   "author": "Bereket Semagn <semagnbereket@gmail.com>",
   "license": "MIT",
-  "bin": {
-    "create-vscode-extension": "./dist/cli.js"
-  },
+  "bin": "dist/cli.js",
   "files": [
-    "dist"
-  ],
+		"dist",
+		"templates"
+	],
   "scripts": {
-    "build": "tsc",
-    "clean": "rimraf ./dist",
-    "dev": "ts-node-dev src/index.ts"
+    "build": "tsup src/cli.ts --minify",
+    "clean": "rm -rf lib",
+    "dev": "tsup src/cli.ts --watch"
   },
   "devDependencies": {
     "@types/node": "^16.7.0"
@@ -21,14 +20,13 @@
   "dependencies": {
     "@types/sade": "^1.7.3",
     "chalk": "^4.1.2",
+    "create-create-app": "^7.1.0",
     "path": "^0.12.7",
     "rimraf": "^3.0.2",
     "sade": "^1.7.4",
     "ts-node-dev": "^1.1.8",
     "tslib": "^2.3.1",
+    "tsup": "^5.5.0",
     "typescript": "^4.3.5"
-  },
-  "engines": {
-    "node": ">=12.0.0"
   }
 }
